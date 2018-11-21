@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewCurpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/FormInputName"
+            style="@style/Margin16"
+            android:hint="@string/name_input"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/FormLabelName" />
+
+        <EditText
+            android:id="@+id/FormInputFatherLastName"
+            style="@style/Margin16"
+            android:hint="@string/father_lastname_input"
+            android:inputType="textPersonName"
+            android:labelFor="@+id/FormLabelFatherLastName" />
+
+        <EditText
+            android:id="@+id/FormInputMotherLastName"
+            style="@style/Margin16"
+            android:hint="@string/mother_lastname_input"
+            android:inputType="textPersonName"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/FormLabelGender"
+            style="@style/Margin16"
+            android:layout_marginBottom="0dp"
+            android:text="@string/gender_input" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/FormRadioGroupGender">
+
+            <RadioButton
+                android:id="@+id/FormRadioMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/m_input" />
+
+            <RadioButton
+                android:id="@+id/FormRadioWoman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/w_input" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/FormLabelBirthday"
+            style="@style/Margin16"
+            android:layout_marginBottom="0dp"
+            android:text="@string/bday_input" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/FormInputBirthdayDay"
+                style="@style/MarginDate"
+                android:hint="@string/day_label"
+                android:inputType="date"
+                android:minWidth="48dp" />
+
+            <EditText
+                android:id="@+id/FormInputBirthdayMonth"
+                style="@style/MarginDate"
+                android:hint="@string/month_label"
+                android:inputType="date"
+                android:minWidth="48dp" />
+
+            <EditText
+                android:id="@+id/FormInputBirthdayYear"
+                style="@style/MarginDate"
+                android:hint="@string/year_label"
+                android:inputType="date"
+                android:minWidth="48dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/FormLabelStates"
+            style="@style/Margin16"
+            android:layout_marginBottom="0dp"
+            android:labelFor="@+id/FormSpinnerState"
+            android:text="@string/states_label" />
+        <Spinner
+            android:id="@+id/FormSpinnerState"
+            style="@style/Margin16"
+            android:layout_marginBottom="48dp"
+            android:entries="@array/States"
+            />
+
+        <Button
+            android:id="@+id/ButtonGenerateCURP"
+            style="@style/FormButton"
+            android:background="@color/colorPrimary"
+            android:onClick="formBtnClicked"
+            android:text="@string/generate_button"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</ScrollView>

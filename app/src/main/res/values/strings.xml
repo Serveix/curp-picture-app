@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Create your CURP</string>
+    <string name="name_input">Name</string>
+    <string name="father_lastname_input">Father\'s Last Name</string>
+    <string name="mother_lastname_input">Mother\'s Last Name</string>
+    <string name="gender_input">Gender</string>
+    <string name="m_input">Man</string>
+    <string name="w_input">Woman</string>
+    <string name="bday_input">Birthday</string>
+    <string name="bday_input_value" translatable="false">01/01/2000</string>
+    <string name="title_error">Incorrect input</string>
+    <string name="body_error">Please, fill up the information correctly</string>
+    <string name="generate_button">Generate CURP</string>
+    <string name="menu_list_view">CURPs</string>
+    <string name="display_curp" translatable="false">CURP</string>
+    <string name="states_label">States</string>
+    <string name="day_label">Day</string>
+    <string name="month_label">Month</string>
+    <string name="year_label">Year</string>
+    <string name="ok_label">Ok</string>
+    <string name="menu_back">Back</string>
+    <string-array name="States">
+        <item>Aguascalientes</item>
+        <item>Baja California</item>
+        <item>Baja California Sur</item>
+        <item>Campeche</item>
+        <item>Chiapas</item>
+        <item>Chihuahua</item>
+        <item>Mexico City</item>
+        <item>Coahuila</item>
+        <item>Colima</item>
+        <item>Durango</item>
+        <item>Mexico State</item>
+        <item>Guanajuato</item>
+        <item>Guerrero</item>
+        <item>Hidalgo</item>
+        <item>Jalisco</item>
+        <item>Michoacan</item>
+        <item>Morelos</item>
+        <item>Nayarit</item>
+        <item>Nuevo Leon</item>
+        <item>Oaxaca</item>
+        <item>Puebla</item>
+        <item>Queretaro</item>
+        <item>Quintana Roo</item>
+        <item>San Luis Potosí</item>
+        <item>Sinaloa</item>
+        <item>Sonora</item>
+        <item>Tabasco</item>
+        <item>Tamaulipas</item>
+        <item>Tlaxcala</item>
+        <item>Veracruz</item>
+        <item>Yucatan</item>
+        <item>Zacatecas</item>
+    </string-array>
+
+</resources>

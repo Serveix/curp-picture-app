@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurpInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Margin16"
+            android:text="@string/display_curp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            />
+        <TextView
+            style="@style/TextAccent"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:id="@+id/DisplayCURP"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            style="@style/Margin16"
+            android:text="@string/name_input" />
+        <TextView
+            style="@style/TextAccent"
+            android:id="@+id/DisplayName"/>
+
+        <TextView
+            style="@style/Margin16"
+            android:text="@string/father_lastname_input" />
+        <TextView
+            style="@style/TextAccent"
+            android:id="@+id/DisplayFatherLastName"/>
+
+        <TextView
+            style="@style/Margin16"
+            android:text="@string/mother_lastname_input" />
+        <TextView
+            style="@style/TextAccent"
+            android:id="@+id/DisplayMotherLastName"/>
+
+        <TextView
+            style="@style/Margin16"
+            android:text="@string/gender_input" />
+        <TextView
+            style="@style/TextAccent"
+            android:id="@+id/DisplayGender"/>
+
+        <TextView
+            style="@style/Margin16"
+            android:text="@string/bday_input" />
+        <TextView
+            style="@style/TextAccent"
+            android:id="@+id/DisplayBirthday"/>
+
+        <TextView
+            style="@style/Margin16"
+            android:text="@string/states_label" />
+        <TextView
+            style="@style/TextAccent"
+            android:id="@+id/DisplayState"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
