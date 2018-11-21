@@ -19,6 +19,10 @@
     <string name="year_label">Year</string>
     <string name="ok_label">Ok</string>
     <string name="menu_back">Back</string>
+    <string name="save_curp_title">Save</string>
+    <string name="save_curp_body">Save CURP</string>
+    <string name="img_btn">Image</string>
+    <string name="generate_curp">Generate CURP</string>
     <string-array name="States">
         <item>Aguascalientes</item>
         <item>Baja California</item>

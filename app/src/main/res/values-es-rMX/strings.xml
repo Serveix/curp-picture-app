@@ -17,6 +17,10 @@
     <string name="year_label">Año</string>
     <string name="ok_label">Ok</string>
     <string name="menu_back">Regresar</string>
+    <string name="save_curp_title">Guardar</string>
+    <string name="save_curp_body">Guardar CURP</string>
+    <string name="img_btn">Imagen</string>
+    <string name="generate_curp">Generar CURP</string>
 
     <string-array name="States">
         <item>Aguascalientes</item>

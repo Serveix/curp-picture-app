@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CurpInfoActivity"></activity>
+        <activity android:name=".CurpInfoActivity" />
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".AdapterRecyclerView"></activity>
     </application>
 
 </manifest>

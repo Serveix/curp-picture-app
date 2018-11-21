@@ -12,21 +12,21 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/FormInputName"
+            android:id="@+id/inputName"
             style="@style/Margin16"
             android:hint="@string/name_input"
             android:inputType="textPersonName"
             android:labelFor="@+id/FormLabelName" />
 
         <EditText
-            android:id="@+id/FormInputFatherLastName"
+            android:id="@+id/inputFatherLastName"
             style="@style/Margin16"
             android:hint="@string/father_lastname_input"
             android:inputType="textPersonName"
             android:labelFor="@+id/FormLabelFatherLastName" />
 
         <EditText
-            android:id="@+id/FormInputMotherLastName"
+            android:id="@+id/inputMotherLastName"
             style="@style/Margin16"
             android:hint="@string/mother_lastname_input"
             android:inputType="textPersonName"
@@ -44,14 +44,14 @@
             android:id="@+id/FormRadioGroupGender">
 
             <RadioButton
-                android:id="@+id/FormRadioMan"
+                android:id="@+id/radioMan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/m_input" />
 
             <RadioButton
-                android:id="@+id/FormRadioWoman"
+                android:id="@+id/radioWoman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -69,21 +69,21 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/FormInputBirthdayDay"
+                android:id="@+id/inputBirthdayDay"
                 style="@style/MarginDate"
                 android:hint="@string/day_label"
                 android:inputType="date"
                 android:minWidth="48dp" />
 
             <EditText
-                android:id="@+id/FormInputBirthdayMonth"
+                android:id="@+id/inputBirthdayMonth"
                 style="@style/MarginDate"
                 android:hint="@string/month_label"
                 android:inputType="date"
                 android:minWidth="48dp" />
 
             <EditText
-                android:id="@+id/FormInputBirthdayYear"
+                android:id="@+id/inputBirthdayYear"
                 style="@style/MarginDate"
                 android:hint="@string/year_label"
                 android:inputType="date"
@@ -94,22 +94,35 @@
             android:id="@+id/FormLabelStates"
             style="@style/Margin16"
             android:layout_marginBottom="0dp"
-            android:labelFor="@+id/FormSpinnerState"
+            android:labelFor="@+id/spinnerState"
             android:text="@string/states_label" />
         <Spinner
-            android:id="@+id/FormSpinnerState"
+            android:id="@+id/spinnerState"
             style="@style/Margin16"
             android:layout_marginBottom="48dp"
             android:entries="@array/States"
             />
 
         <Button
-            android:id="@+id/ButtonGenerateCURP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_btn"
+            android:onClick="getImageFromGallery"/>
+
+        <ImageView
+            android:id="@+id/imageViewForm"
+            style="@style/Margin16"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:background="@color/colorDarkGrey" />
+
+        <Button
             style="@style/FormButton"
-            android:background="@color/colorPrimary"
-            android:onClick="formBtnClicked"
-            android:text="@string/generate_button"
-            android:textColor="@color/colorWhite" />
+            android:id="@+id/ButtonGenerateCURP"
+            android:text="@string/generate_curp"
+            android:background="@drawable/button_selector"
+            android:textColor="@color/colorWhite"
+            android:onClick="saveCurpButton"/>
 
 
     </LinearLayout>
